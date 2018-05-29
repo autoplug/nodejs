@@ -1,0 +1,19 @@
+{
+  "name": "admin-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "admin.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "mongodb": "^3.0.6",
+    "mysql": "^2.15.0",
+    "sharp": "^0.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon admin.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
