@@ -3,8 +3,8 @@
 var express = require('express')
 var router = express.Router()
 
-var login = require('./auth/login.js')
-
-router.all('/login', login)
+router.get('/', (req, res)=>{
+    res.send('api')
+})
 
 module.exports = router
