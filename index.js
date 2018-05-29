@@ -1,10 +1,16 @@
+'use strict'
+
 var express = require('express')
 var app = express()
 
-var config = require('./config')
+global.config = require('./config')
 
-app.get('/',(req, res)=>{
-    res.send('test')
-})
+var admin = require('./admin/index.js')
+
+
+app.use('/admin-api/', admin)
+
+
+
 
 app.listen(config.port)
